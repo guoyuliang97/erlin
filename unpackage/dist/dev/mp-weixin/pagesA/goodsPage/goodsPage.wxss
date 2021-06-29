@@ -1,0 +1,39 @@
+
+.banner.data-v-36f03bf7{
+	width:100%;
+	height: 450rpx;
+}
+.swiper.data-v-36f03bf7{
+	width:100%;
+	height:100%
+}
+.swiper_img.data-v-36f03bf7{
+	width:100%;
+	height: 100%;
+}
+/*改变swiper指示点位置*/
+.wx-swiper-dots.data-v-36f03bf7{position:relative;margin-bottom: 50rpx;}
+.content.data-v-36f03bf7{
+	width:90%;
+	padding: 10px 5%;
+	background-color: #fff;
+}
+.hui_box.data-v-36f03bf7{
+	padding: 5rpx;
+	border-radius: 10rpx;
+}
+.black.data-v-36f03bf7{
+	color: #000000;
+	font-weight: bold;
+}
+.red.data-v-36f03bf7{
+	color: red;
+}
+.good_box.data-v-36f03bf7{
+	width:150rpx
+}
+.good_Des.data-v-36f03bf7{
+	width: 600rpx;
+	line-height: 20px;
+}
+

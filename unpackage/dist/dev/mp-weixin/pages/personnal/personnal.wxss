@@ -1,0 +1,56 @@
+
+.img.data-v-25393c3e{
+	width:100%;
+	height: 100%;
+	border-radius: 10rpx;
+}
+
+
+.sameHuise.data-v-a182d0e0 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.person_head.data-v-a182d0e0 {
+	height: 250rpx;
+	position: relative;
+}
+.bgColor.data-v-a182d0e0 {
+	background-color: #999;
+}
+.logion_btn.data-v-a182d0e0 {
+	width: 300rpx;
+}
+.logion_on.data-v-a182d0e0 {
+	width: 96%;
+	padding: 0 2%
+}
+.logion.data-v-a182d0e0,
+.regist.data-v-a182d0e0 {
+	padding: 10rpx 30rpx;
+	border-radius: 30rpx;
+}
+.regist.data-v-a182d0e0 {
+	background-color: #fff;
+}
+.persType.data-v-a182d0e0 {
+	padding: 5rpx 10rpx;
+	border-radius: 20rpx;
+	background-image: -webkit-linear-gradient(left, #19CBBC, #1ACBC9);
+	background-image: linear-gradient(to right, #19CBBC, #1ACBC9);
+	color: #FFFFFF;
+}
+.per_content.data-v-a182d0e0 {
+	width: 88%;
+	margin: 0 auto 20rpx auto;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 20rpx 4%;
+}
+.notice.data-v-a182d0e0 {
+	position: absolute;
+	right: 50rpx;
+}
+

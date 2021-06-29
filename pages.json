@@ -1,0 +1,148 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/classify/classify",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/shopping/shopping",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/personnal/personnal",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}
+	    ,{
+            "path" : "pages/image/image",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/detail/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/header/header",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        
+    ],
+	"subPackages": [
+		{
+			"root": "pagesA",  //文件夹名称，  pages文件夹同级新建一个就行
+			"pages": [
+				{
+				    "path" : "getPhone/getPhone",
+				    "style" :                                                                                    
+				    {
+				        "navigationBarTitleText": "",
+				        "enablePullDownRefresh": false
+				    }
+				    
+				}
+			    ,{
+                    "path" : "goodsPage/goodsPage",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "商品详情",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "searchPage/searchPage",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+		}
+	],
+	"preloadRule" :{
+		"pages/index/index":{ //要进行预加载时用户要进入的页面路径
+			"network":"all", // 什么网络下支持允许预加载，默认wifi: wifi/all
+			"packages":["pagesA"] // 要进行预加载的子包名
+		}
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "二邻",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#fff"
+	},
+	"tabBar":{
+		"color": "#7A7E83" ,// tab上的文字默认颜色
+		"selectedColor":"#ffc107", // tab 上的文字选中时的颜色
+		"borderStyle":"black", // tabbar 上边框的颜色，可选值 black/white
+		"list": [
+			{
+				"pagePath":"pages/index/index",
+				"iconPath":"./static/img/erlin1.png",
+				"selectedIconPath":"static/img/erlin2.png",
+				"text":"首页"
+			},
+			{  //tab 的列表，详见 list 属性说明，最少2个、最多5个 tab
+		        "pagePath": "pages/classify/classify", //页面路径，必须在 pages 中先定义
+		        "iconPath": "static/img/category.png", //图片路径
+		        "selectedIconPath": "static/img/category1.png", //选中时的图片路径
+				"text": "分类" //tab 上按钮文字，在 App 和 H5 平台为非必填。例如中间可放一个没有文字的+号图
+		    }, 
+			{
+		        "pagePath": "pages/shopping/shopping",
+		        "iconPath": "static/img/gouwuche.png",
+		        "selectedIconPath": "static/img/gouwuche1.png",
+		        "text": "购物车"
+		    },
+			{
+				"pagePath":"pages/personnal/personnal",
+				"iconPath":"static/img/wode.png",
+				"selectedIconPath":"static/img/wode1.png",
+				"text":"我的"
+			}
+			]
+	},
+	"condition": { //模式配置，仅开发期间生效
+	    "current": 0, //当前激活的模式（list 的索引项）
+	    "list": [
+	        {
+	            "name": "test",
+	            "path": "pagesA/goodsPage/goodsPage"
+	        }
+	    ]
+	}
+}

@@ -1,0 +1,1 @@
+<view style="width:100%;height:100%;" class="data-v-25393c3e"><image class="img data-v-25393c3e" src="{{imgSrc}}" lazy-load="true" mode="{{type=='home_discount'?'aspectFill':'scaleToFill'}}" data-event-opts="{{[['error',[['loadfalse',['$event']]]]]}}" binderror="__e"></image></view>

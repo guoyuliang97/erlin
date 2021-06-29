@@ -1,0 +1,65 @@
+
+.img.data-v-25393c3e{
+	width:100%;
+	height: 100%;
+	border-radius: 10rpx;
+}
+
+
+.content.data-v-24f06b86{
+	padding: 20rpx;
+}
+.ok.data-v-24f06b86{
+	width:40rpx;
+	height:40rpx;
+	border-radius: 50%;
+	border: 1px solid #eee;
+}
+.checkColor.data-v-24f06b86{
+	text-align: center;
+}
+.shop_li.data-v-24f06b86{
+	padding: 20rpx;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.line_y.data-v-24f06b86{
+	width:1px;
+	height: 10px;
+	background-color: red;
+	-webkit-transform: scaleX(0.5);
+	        transform: scaleX(0.5);
+}
+.shop_img.data-v-24f06b86{
+	width:100rpx;
+	height:100rpx
+}
+.mid_box.data-v-24f06b86{
+	width: 350rpx;
+}
+.end_box.data-v-24f06b86{
+	width: 150rpx
+}
+.dicuss.data-v-24f06b86{
+	padding: 5rpx;
+	background-color: red;
+	color:#fff;
+	border-radius: 5px;
+}
+.price_box.data-v-24f06b86{
+	padding: 20rpx;
+	border-top-left-radius: 10rpx;
+	border-bottom-left-radius: 10rpx;
+	color:#000 !important;
+	font-weight: bold;
+}
+.price_loa.data-v-24f06b86{
+	padding: 20rpx;
+	border-top-right-radius: 10rpx;
+	border-bottom-right-radius: 10rpx;
+}
+.huise_low.data-v-24f06b86{
+	background-color: #999;
+	color: #fff
+}
+
