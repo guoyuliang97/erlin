@@ -556,7 +556,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 67:
+/***/ 69:
 /*!*********************************************************************!*\
   !*** D:/hello-uni/erLin/main.js?{"page":"pages%2Fdetail%2Fdetail"} ***!
   \*********************************************************************/
@@ -572,5 +572,5 @@ createPage(_detail.default);
 
 /***/ })
 
-},[[67,"common/runtime","common/vendor"]]]);
+},[[69,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/pages/detail/detail.js.map

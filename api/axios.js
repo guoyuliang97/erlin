@@ -2,7 +2,7 @@ import Api  from './api.js';
 
 const axios = (url,params,method) => {
 	var token = uni.getStorageSync('elToken')
-	if(token !== 'undefined' || token !== null){
+	if(token !== ''){
 		var header = {
 			Authorization: uni.getStorageSync('elToken')
 		}
@@ -15,8 +15,12 @@ const axios = (url,params,method) => {
 			data: params,
 			dataType:'json',
 			success(res) {
-				console.log(res)
-				resolve(res)
+				var code = res.data.code
+				switch(code){
+					case 200: 
+						resolve(res);
+						break;
+				}
 			},
 			fail(err){
 				reject(err)

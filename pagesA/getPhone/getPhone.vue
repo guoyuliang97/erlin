@@ -40,8 +40,13 @@
 	export default {
 		data() {
 			return {
-				EMS_sms:'获取验证码'
+				EMS_sms:'获取验证码',
+				code:''
 			}
+		},
+		onLoad(params){
+			
+			this.code = params.code
 		},
 		methods: {
 			// 获取验证码
@@ -50,6 +55,18 @@
 			},
 			getPhoneNumber(e){
 				console.log(e)
+				if(e.detail.errMsg == "getPhoneNumber:ok"){
+					var params = {
+						code: this.code,
+						phoneData:{
+							encDataStr: e.detail.encryptedData,
+							icStr: e.detail.iv
+						}
+					}
+					this.$axios('/api/auth/wxLogin',params,'post').then(res=>{
+						console.log(res)
+					})
+				}
 			}
 			
 		},

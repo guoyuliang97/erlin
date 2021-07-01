@@ -13,6 +13,24 @@
 				<!-- <label @tap="toRegist" class="regist fontSize">注册</label> -->
 			</view>
 		</view>
+		<view v-else class="person_head">
+			<view class="logion_on flexBetween  marginTop">
+				<view class="flexStart ">
+					<view class="userImg">
+						<LoadImg :imgurl="user.userImg"></LoadImg>
+					</view>
+					<view class="marginLeft flexAltum ">
+						<view>
+							<text class="fontSize fontWeight">{{user.username}}</text>
+						</view>
+					
+					</view>
+				</view>
+				<view style="line-height: 55px;">
+					<text @tap="toPerson" class="middeSize">个人资料&gt;</text>
+				</view>
+			</view>
+		</view>
 
 		<!-- 体验订单 -->
 		<view class="per_content">
@@ -133,6 +151,7 @@
 				fans_num:0,
 				praise_replay_num:0,
 				balance:0,
+				user:{}
 				
 			}
 		},
@@ -146,6 +165,13 @@
 					uni.removeStorageSync('code')
 				}
 			})
+			
+			var states = uni.getStorageSync('states')
+			console.log(states)
+			if(states !== ''){
+				this.isLogin = true
+				this.user = states
+			}
 
 		},
 
@@ -223,13 +249,7 @@
 							provider:'weixin',
 							success:function(res){
 								that.code = res.code
-							
-								uni.navigateTo({
-									url: '../../pagesA/getPhone/getPhone?code='+ res.code,
-									animationDuration: 200,
-									animationType: 'pop-in'
-								})
-								// that.getUseCode(userInfo,res.code)
+								that.getUseCode(userInfo,res.code)
 							}
 						})
 					  },
@@ -242,10 +262,35 @@
 				//通过code获取信息
 				getUseCode(info,code){
 					var params = {
-						code:code
+						code:code,
+						icon: info.avatarUrl,
+						nickName:  info.nickName,
 					}
 					this.$axios('/api/auth/wxLogin',params,'post').then(res=>{
-				
+						var data = res.data.data
+						
+						uni.setStorage({
+							key: 'elToken',
+							data: data.token
+						})
+						var state = {
+							userImg: data.icon,
+							username: data.username,
+							openId: data.openId
+						}
+						this.user = state
+						this.isLogin = !this.isLogin
+						uni.setStorage({
+							key: 'states',
+							data:state
+						})
+						if(!res.data.data.phoneNum){
+							uni.navigateTo({
+								url: '../../pagesA/getPhone/getPhone?code='+ code ,
+								animationDuration: 200,
+								animationType: 'pop-in'
+							})
+						}
 					})
 				},
 				getUer(){

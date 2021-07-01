@@ -2082,7 +2082,7 @@ if (true) {
 
 var axios = function axios(url, params, method) {
   var token = uni.getStorageSync('elToken');
-  if (token !== 'undefined' || token !== null) {
+  if (token !== '') {
     var header = {
       Authorization: uni.getStorageSync('elToken') };
 
@@ -2095,8 +2095,12 @@ var axios = function axios(url, params, method) {
       data: params,
       dataType: 'json',
       success: function success(res) {
-        console.log(res);
-        resolve(res);
+        var code = res.data.code;
+        switch (code) {
+          case 200:
+            resolve(res);
+            break;}
+
       },
       fail: function fail(err) {
         reject(err);
@@ -8237,7 +8241,7 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 74:
+/***/ 98:
 /*!******************************************************************************!*\
   !*** D:/hello-uni/erLin/uni_modules/uni-icons/components/uni-icons/icons.js ***!
   \******************************************************************************/

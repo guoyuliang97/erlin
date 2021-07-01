@@ -180,7 +180,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 66:
+/***/ 68:
 /*!*******************************************************************!*\
   !*** D:/hello-uni/erLin/main.js?{"page":"pages%2Fimage%2Fimage"} ***!
   \*******************************************************************/
@@ -196,5 +196,5 @@ createPage(_image.default);
 
 /***/ })
 
-},[[66,"common/runtime","common/vendor"]]]);
+},[[68,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/pages/image/image.js.map

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "load-img": "/pages/image/image",
+    "detail": "/pages/detail/detail",
+    "head": "/pages/header/header"
+  }
+}

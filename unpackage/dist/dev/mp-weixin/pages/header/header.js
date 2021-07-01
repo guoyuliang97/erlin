@@ -258,7 +258,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 68:
+/***/ 70:
 /*!*********************************************************************!*\
   !*** D:/hello-uni/erLin/main.js?{"page":"pages%2Fheader%2Fheader"} ***!
   \*********************************************************************/
@@ -274,5 +274,5 @@ createPage(_header.default);
 
 /***/ })
 
-},[[68,"common/runtime","common/vendor"]]]);
+},[[70,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/pages/header/header.js.map
