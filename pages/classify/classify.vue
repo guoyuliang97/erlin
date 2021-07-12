@@ -12,7 +12,7 @@
 			<view class="shop_box " :class="[isTrue ? 'sameHuise ':'sameWhite']">
 				<scroll-view scroll-with-animation scroll-y="true" @scroll="scroll" lower-threshold="100"   @scrolltolower="scrollShop" :scroll-top="top"  :style="{height: height + 'px'}">
 					<view :class="[isTrue ? 'classify_shop_li' : 'shop_li']" v-for="(item,index) in shopList" :key="index">
-						<detail  :type="isTrue ? 'classify_shop':'classify'" :infoData="item"></detail>
+						<detail @tap="toChild(item,index)" :type="isTrue ? 'classify_shop':'classify'" :infoData="item"></detail>
 					</view>
 					<view v-if="isAdd" class="alignCenter huise">
 						<text class="smallSize">已经到底部了...</text>
@@ -307,6 +307,21 @@
 					this.changeScrool()
 				}else{
 					this.shopList = [...this.shopList,...this.arr]
+				}
+			},
+			toChild(item,index){
+				if(this.isTrue){
+					uni.navigateTo({
+						url: '../../pagesA/shopPage/shopPage',
+						animationDuration: 200,
+						animationType: 'fade-in'
+					})
+				}else{
+					uni.navigateTo({
+						url: '../../pagesA/goodsPage/goodsPage',
+						animationDuration: 200,
+						animationType: 'fade-in'
+					})
 				}
 			}
 		}

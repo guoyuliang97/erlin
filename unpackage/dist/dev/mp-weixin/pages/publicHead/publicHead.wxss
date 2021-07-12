@@ -1,11 +1,17 @@
 
-.top_bar.data-v-45ae3526{
-	position: fixed;
+.top_bar.data-v-4e6e38b4{
+	/* position: fixed;
 	left:0;
 	right: 0;
 	top: 0;
+	padding:5upx 20upx;
+	z-index:999; */
+	position: fixed;
+	left: 30rpx;
 	padding:5rpx 20rpx;
-	z-index:999
+	border-radius: 20px;
+	border: 1px solid #EEEEEE;
+	z-index:2
 }
 /* .top_bar{
 	position: fixed;
@@ -18,28 +24,28 @@
 	z-index:999;
 
 } */
-.seracj.data-v-45ae3526{
+.seracj.data-v-4e6e38b4{
 	padding: 7px 20rpx;
 	border-radius: 10px;
 	width:40%;
 	margin-top: 0px;
 }
-.line.data-v-45ae3526{
+.line.data-v-4e6e38b4{
 	width: 1px;
 	height: 15px;
 	margin: auto 10px;
 	background-color: #EEEEEE;
 }
-.fenxiang.data-v-45ae3526{
+.fenxiang.data-v-4e6e38b4{
 	position: absolute;
 	right: 20px;
 }
-.fixFenxiang.data-v-45ae3526{
+.fixFenxiang.data-v-4e6e38b4{
 	position: fixed;
 	right: 20px;
 	z-index: 1;
 }
-.yuan.data-v-45ae3526{
+.yuan.data-v-4e6e38b4{
 	width:40px;
 	height: 40px;
 	border-radius: 50%;

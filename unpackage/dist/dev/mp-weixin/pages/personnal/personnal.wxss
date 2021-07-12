@@ -38,6 +38,7 @@
 .persType.data-v-a182d0e0 {
 	padding: 5rpx 10rpx;
 	border-radius: 20rpx;
+	background-image: -webkit-gradient(linear, left top, right top, from(#19CBBC), to(#1ACBC9));
 	background-image: -webkit-linear-gradient(left, #19CBBC, #1ACBC9);
 	background-image: linear-gradient(to right, #19CBBC, #1ACBC9);
 	color: #FFFFFF;

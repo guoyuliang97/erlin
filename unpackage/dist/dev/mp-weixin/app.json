@@ -6,7 +6,8 @@
     "pages/personnal/personnal",
     "pages/image/image",
     "pages/detail/detail",
-    "pages/header/header"
+    "pages/header/header",
+    "pages/publicHead/publicHead"
   ],
   "subPackages": [
     {
@@ -14,7 +15,8 @@
       "pages": [
         "getPhone/getPhone",
         "goodsPage/goodsPage",
-        "searchPage/searchPage"
+        "searchPage/searchPage",
+        "shopPage/shopPage"
       ]
     }
   ],
@@ -68,6 +70,5 @@
       "desc": "地点定位"
     }
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap.json"
+  "usingComponents": {}
 }

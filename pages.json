@@ -58,6 +58,15 @@
             
         }
         
+        ,{
+            "path" : "pages/publicHead/publicHead",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"subPackages": [
 		{
@@ -87,6 +96,17 @@
                 {
                     "navigationBarTitleText": "",
                     "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "shopPage/shopPage",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false,
+					"navigationStyle":"custom",
+					"navigationBarTextStyle":"white"
                 }
                 
                 }
@@ -141,7 +161,7 @@
 	    "list": [
 	        {
 	            "name": "test",
-	            "path": "pagesA/goodsPage/goodsPage"
+	            "path": "pagesA/shopPage/shopPage"
 	        }
 	    ]
 	}

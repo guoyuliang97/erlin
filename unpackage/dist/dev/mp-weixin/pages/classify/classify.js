@@ -1229,6 +1229,21 @@ var _header = _interopRequireDefault(__webpack_require__(/*! ../header/header */
       } else {
         this.shopList = [].concat(_toConsumableArray(this.shopList), _toConsumableArray(this.arr));
       }
+    },
+    toChild: function toChild(item, index) {
+      if (this.isTrue) {
+        uni.navigateTo({
+          url: '../../pagesA/shopPage/shopPage',
+          animationDuration: 200,
+          animationType: 'fade-in' });
+
+      } else {
+        uni.navigateTo({
+          url: '../../pagesA/goodsPage/goodsPage',
+          animationDuration: 200,
+          animationType: 'fade-in' });
+
+      }
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

@@ -129,6 +129,9 @@
 	.sameNmColor{
 		color:#626467
 	}
+	.sameRed{
+		color: red;
+	}
 	.sameColorHui{
 		color:#999999
 	}
