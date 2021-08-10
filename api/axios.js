@@ -20,10 +20,29 @@ const axios = (url,params,method) => {
 					case 200: 
 						resolve(res);
 						break;
+					case 403:
+						uni.showToast({
+							title: '网络出了点问题,稍后重试!',
+							icon: 'none'
+						});
+						
+						break;
 				}
 			},
 			fail(err){
-				reject(err)
+				console.log(err)
+				var code = err.data.data
+				switch(code){
+					
+					case 403:
+						uni.showToast({
+							title: '网络出了点问题,稍后重试!',
+							icon: 'none'
+						});
+						
+						break;
+				}
+				
 			}
 		})
 	})

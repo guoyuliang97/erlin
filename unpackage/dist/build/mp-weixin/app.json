@@ -6,7 +6,9 @@
     "pages/personnal/personnal",
     "pages/image/image",
     "pages/detail/detail",
-    "pages/header/header"
+    "pages/header/header",
+    "pages/publicHead/publicHead",
+    "pages/ratePage/ratePage"
   ],
   "subPackages": [
     {
@@ -14,7 +16,10 @@
       "pages": [
         "getPhone/getPhone",
         "goodsPage/goodsPage",
-        "searchPage/searchPage"
+        "searchPage/searchPage",
+        "shopPage/shopPage",
+        "orderCenter/orderCenter",
+        "shopRenz/shopRenz"
       ]
     }
   ],

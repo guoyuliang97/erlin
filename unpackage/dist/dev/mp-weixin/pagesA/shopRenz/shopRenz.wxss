@@ -1,0 +1,31 @@
+
+.img.data-v-25393c3e{
+	width:100%;
+	height: 100%;
+	border-radius: 10rpx;
+}
+
+
+.shopContent.data-v-bbc6396a{
+	width: 90%;
+	margin: 0 auto;
+	padding: 20px 0
+}
+.border_photo.data-v-bbc6396a{
+	border: 1px solid #999;
+	background-color: #eee;
+	width: 80px;
+	height: 80px;
+	border-radius: 10rpx;
+}
+.step_btn.data-v-bbc6396a{
+    position: fixed;
+	bottom: 0;
+	left: 5%;
+	right: 5%;
+}
+.img.data-v-bbc6396a{
+	width:100%;
+	height: 100%
+}
+

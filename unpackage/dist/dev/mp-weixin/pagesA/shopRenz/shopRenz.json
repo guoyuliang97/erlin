@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-steps": "/uni_modules/uni-steps/components/uni-steps/uni-steps",
+    "load-img": "/pages/image/image",
+    "kps-image-cutter": "/components/ksp-image-cutter/ksp-image-cutter"
+  }
+}

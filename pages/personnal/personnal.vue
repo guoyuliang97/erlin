@@ -79,7 +79,7 @@
 				</text>
 			</view>
 			<view class="flexBetween middeSize marginTm">
-				<label class="flexAltum " @tap="toOrder(item,index)" v-for="(item,index) in shop" :key="index">
+				<label class="flexAltum " @tap="toShop(item,index)" v-for="(item,index) in shop" :key="index">
 					<view class="alignCenter">
 						<view class="iconfont position-bottom icon-font-size-40" :class="[item.icon]">
 							<view v-if="index == 0 && order_num > 0" class="position-top">{{order_num}}</view>
@@ -268,10 +268,10 @@
 					}
 					this.$axios('/api/auth/wxLogin',params,'post').then(res=>{
 						var data = res.data.data
-						
+						console.log(data)
 						uni.setStorage({
 							key: 'elToken',
-							data: data.token
+							data: 'Bearer ' + data.token
 						})
 						var state = {
 							userImg: data.icon,
@@ -348,16 +348,24 @@
 					var isLogin = this.$getLogin()
 					if (isLogin) {
 						uni.navigateTo({
-							url: '/pages_A/orderCenter/orderCenter?index=' + index,
+							url: '/pagesA/orderCenter/orderCenter?index=' + index,
 							animationDuration: 200,
 							animationType: 'pop-in'
 						})
-						if(index == 0 || index == 2){
-							this.readOrder(item,index)
-						}
+					
 					}
 
 				},
+				//店铺验证
+				toShop(item,index){
+					if(index == 1){
+						uni.navigateTo({
+							url: '/pagesA/shopRenz/shopRenz',
+							animationDuration: 200,
+							animationType: 'pop-in'
+						})
+					} 
+				}
 
 		}
 	}

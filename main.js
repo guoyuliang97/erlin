@@ -8,6 +8,10 @@ import  Api  from './api/api.js'
 Vue.prototype.$baseUrl = Api.baseUrl  // axios api
 Vue.prototype.$sokectUrl = Api.soketUrl // websoket api
 
+//引入全局登陆
+import getLogin from './api/logion.js'
+Vue.prototype.$getLogin = getLogin
+
 //引入全局axois
 import axios from './api/axios.js'
 Vue.prototype.$axios = axios
@@ -23,7 +27,13 @@ var qqmapsdk = new QQMapWX({
 })
 Vue.prototype.$QQmap = qqmapsdk
 
+//引入全局失败请求
+import failQuest from './api/failAxios.js'
+Vue.prototype.$failQuest = failQuest
 
+//引入全局文件上传
+import fileUpload from './api/fileUpload.js'
+Vue.prototype.$fileUpload = fileUpload
 
 
 

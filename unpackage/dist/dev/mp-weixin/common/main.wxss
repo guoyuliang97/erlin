@@ -37,9 +37,9 @@
 /*每个页面公共css */
 @font-face {
   font-family: "iconfont"; /* Project id 2547461 */
-  src: url('//at.alicdn.com/t/font_2547461_im86v5e0afn.woff2?t=1626079201096') format('woff2'),
-       url('//at.alicdn.com/t/font_2547461_im86v5e0afn.woff?t=1626079201096') format('woff'),
-       url('//at.alicdn.com/t/font_2547461_im86v5e0afn.ttf?t=1626079201096') format('truetype');
+  src: url('//at.alicdn.com/t/font_2547461_75fbva84pyf.woff2?t=1626145839254') format('woff2'),
+       url('//at.alicdn.com/t/font_2547461_75fbva84pyf.woff?t=1626145839254') format('woff'),
+       url('//at.alicdn.com/t/font_2547461_75fbva84pyf.ttf?t=1626145839254') format('truetype');
 }
 .iconfont {
   font-family: "iconfont" !important;
@@ -47,6 +47,9 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.icon-pingfenxingxing:before {
+  content: "\e6d0";
 }
 .icon-shijian:before {
   content: "\e7d0";
@@ -269,6 +272,9 @@
 .sameColor{
 	color: #ffc107
 }
+.btm_line{
+	border-bottom: 1px solid #ffc107;
+}
 .mainColor{
 	color: red
 }
@@ -468,6 +474,14 @@
 		font-family: '微软雅黑';
 		font-size: 30rpx;
 }
+.fontsize-50{
+		font-family: '微软雅黑';
+		font-size: 50rpx;
+}
+.fontsize-15{
+		font-family: '微软雅黑';
+		font-size: 15rpx;
+}
 .fontSize-20{
 		font-family: '微软雅黑';
 		font-size: 20rpx;
@@ -494,6 +508,9 @@
 }
 .marginLeft-16{
 		margin-left: 16rpx
+}
+.marginLeft-55{
+		margin-left:  55rpx;
 }
 .marginT-16{
 		margin-top: 16rpx
@@ -573,6 +590,10 @@
 		top:50%;
 		-webkit-transform: translate(-50%,-50%);
 		        transform: translate(-50%,-50%);
+}
+.input_border{
+		border-bottom: 1px solid #999;
+		padding: 0 0 20rpx 0;
 }
 /* 图标 */
 .fontsize-18{

@@ -18,6 +18,7 @@
 		},
 		watch:{
 			imgurl(){
+				console.log(1)
 				this.imgSrc = this.imgurl ? this.imgurl : this.defaultImg
 			}
 		},

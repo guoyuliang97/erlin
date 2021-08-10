@@ -18,29 +18,39 @@ var _api = _interopRequireDefault(__webpack_require__(/*! ./api/api.js */ 11));
 
 
 
-var _axios = _interopRequireDefault(__webpack_require__(/*! ./api/axios.js */ 12));
+var _logion = _interopRequireDefault(__webpack_require__(/*! ./api/logion.js */ 12));
 
 
 
-var _mapChange = _interopRequireDefault(__webpack_require__(/*! ./api/mapChange.js */ 13));
+var _axios = _interopRequireDefault(__webpack_require__(/*! ./api/axios.js */ 13));
 
 
 
-var _qqmapWxJssdkMin = _interopRequireDefault(__webpack_require__(/*! ./static/qqmap-wx-jssdk1.2/qqmap-wx-jssdk.min.js */ 14));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}_vue.default.config.productionTip = false; //引入全局API
+var _mapChange = _interopRequireDefault(__webpack_require__(/*! ./api/mapChange.js */ 14));
+
+
+
+var _qqmapWxJssdkMin = _interopRequireDefault(__webpack_require__(/*! ./static/qqmap-wx-jssdk1.2/qqmap-wx-jssdk.min.js */ 15));
+
+
+
+
+
+
+var _failAxios = _interopRequireDefault(__webpack_require__(/*! ./api/failAxios.js */ 16));
+
+
+
+var _fileUpload = _interopRequireDefault(__webpack_require__(/*! ./api/fileUpload.js */ 17));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}_vue.default.config.productionTip = false; //引入全局API
 _vue.default.prototype.$baseUrl = _api.default.baseUrl; // axios api
 _vue.default.prototype.$sokectUrl = _api.default.soketUrl; // websoket api
-//引入全局axois
+//引入全局登陆
+_vue.default.prototype.$getLogin = _logion.default; //引入全局axois
 _vue.default.prototype.$axios = _axios.default; //定义百度地图转坐标
 _vue.default.prototype.$BaiduToQQ = _mapChange.default; //引入腾讯地图api
-var qqmapsdk = new _qqmapWxJssdkMin.default({ key: 'KZ6BZ-3ATKU-FAJVR-4YPPS-EXB35-K2FDK' });_vue.default.prototype.$QQmap = qqmapsdk;
-
-
-
-
-_App.default.mpType = 'app';
-
-var app = new _vue.default(_objectSpread({},
-_App.default));
+var qqmapsdk = new _qqmapWxJssdkMin.default({ key: 'KZ6BZ-3ATKU-FAJVR-4YPPS-EXB35-K2FDK' });_vue.default.prototype.$QQmap = qqmapsdk; //引入全局失败请求
+_vue.default.prototype.$failQuest = _failAxios.default; //引入全局文件上传
+_vue.default.prototype.$fileUpload = _fileUpload.default;_App.default.mpType = 'app';var app = new _vue.default(_objectSpread({}, _App.default));
 
 createApp(app).$mount();
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createApp"]))

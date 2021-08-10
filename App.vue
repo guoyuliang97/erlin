@@ -108,6 +108,9 @@
 	.sameColor{
 		color: #ffc107
 	}
+	.btm_line{
+		border-bottom: 1px solid #ffc107;
+	}
 	.mainColor{
 		color: red
 	}
@@ -305,6 +308,14 @@
 			font-family: '微软雅黑';
 			font-size: 30rpx;
 		}
+		.fontsize-50{
+			font-family: '微软雅黑';
+			font-size: 50rpx;
+		}
+		.fontsize-15{
+			font-family: '微软雅黑';
+			font-size: 15rpx;
+		}
 		.fontSize-20{
 			font-family: '微软雅黑';
 			font-size: 20rpx;
@@ -331,6 +342,9 @@
 		}
 		.marginLeft-16{
 			margin-left: 16rpx
+		}
+		.marginLeft-55{
+			margin-left:  55rpx;
 		}
 			.marginT-16{
 			margin-top: 16rpx
@@ -409,6 +423,10 @@
 			left:50%;
 			top:50%;
 			transform: translate(-50%,-50%);
+		}
+		.input_border{
+			border-bottom: 1px solid #999;
+			padding: 0 0 20rpx 0;
 		}
 		
 		

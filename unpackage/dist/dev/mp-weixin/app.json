@@ -7,7 +7,8 @@
     "pages/image/image",
     "pages/detail/detail",
     "pages/header/header",
-    "pages/publicHead/publicHead"
+    "pages/publicHead/publicHead",
+    "pages/ratePage/ratePage"
   ],
   "subPackages": [
     {
@@ -16,7 +17,9 @@
         "getPhone/getPhone",
         "goodsPage/goodsPage",
         "searchPage/searchPage",
-        "shopPage/shopPage"
+        "shopPage/shopPage",
+        "orderCenter/orderCenter",
+        "shopRenz/shopRenz"
       ]
     }
   ],
@@ -70,5 +73,6 @@
       "desc": "地点定位"
     }
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }

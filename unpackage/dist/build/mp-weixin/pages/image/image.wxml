@@ -1,1 +1,1 @@
-<view style="width:100%;height:100%;" class="data-v-d8110aae"><image class="img data-v-d8110aae" src="{{imgSrc}}" lazy-load="true" mode="{{type=='home_discount'?'aspectFill':'scaleToFill'}}" data-event-opts="{{[['error',[['loadfalse',['$event']]]]]}}" binderror="__e"></image></view>
+<view style="width:100%;height:100%;" class="data-v-5ae49b99"><image class="img data-v-5ae49b99" src="{{imgSrc}}" lazy-load="true" mode="{{type=='home_discount'?'aspectFill':'scaleToFill'}}" data-event-opts="{{[['error',[['loadfalse',['$event']]]]]}}" binderror="__e"></image></view>

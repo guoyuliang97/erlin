@@ -1,0 +1,1 @@
+<view class="flexStart"><block wx:for="{{rateList}}" wx:for-item="item" wx:for-index="index" wx:key="index"><block wx:if="{{item<score}}"><view><view class="iconfont icon-pingfenxingxing sameColor"></view></view></block></block><block wx:if="{{type=='1'}}"><view class="flexLineCenter marginLeft"><text>{{score}}</text></view></block></view>
